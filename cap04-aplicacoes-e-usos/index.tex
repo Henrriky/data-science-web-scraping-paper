@@ -42,7 +42,7 @@ A primeira técnica utilizada para adaptar as respostas de um modelo de LLM, é 
 
 O ajuste fino é considerado uma técnica que utiliza-se do aprendizado supervisionado, uma vez que para realizar o treinamento de um modelo de LLM para um domínio específico, é necessário fornecer um conjunto de dados rotulados. É nessa etapa que o Web Scraping pode atuar como uma ferramenta essencial para realizar a obtenção das informações, que eventualmente podem não estar disponíveis de forma oficial. Seu papel entra diretamente na capacidade de extrair dados rotulados a partir de páginas web que estejam alinhadas com o objetivo final do modelo que será treinado, transformando eles em dados rotulados que são utilizados dentro do processo de fine-tuning. A título de exemplo, podemos citar uma uma página web de perguntas e respostas de uma empresa, que contém dados rotulados (as respostas) e podem ser facilmente transformados para realizar o aprendizado supervisionado por meio do fine-tuning.
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=\linewidth]{cap04-aplicacoes-e-usos/assets/fine-tuning-image-1.pdf}
   \caption{Conjunto de dados do Hugging Face para fine-tuning de modelos de linguagem.}
@@ -53,7 +53,7 @@ O ajuste fino é considerado uma técnica que utiliza-se do aprendizado supervis
 
 Essa técnica costuma ser oferecida como serviço na nuvem, diretamente nos servidores das empresas que possuem um LLM proprietário. Uma delas é a OpenAI, que permite realizar o envio de arquivos CSV contendo a variável independente e a dependente (alvo). Após a execução do processo de fine-tuning com o conjunto de dados enviado, gera-se um modelo com identificador único que pode ser utilizado posteriormente, seja por meio de chamadas de API, para integrar com aplicações empresariais, ou pela própria interface da OpenAI. Por outro lado, existem LLM que são disponibilizados de forma gratuitas através de plataformas como o Hugging Face e que podem ser baixados em servidores dedicados, sendo possível aplicar o mesmo processo de fine-tuning que é utilizado dentro da plataforma de empresas que possuem modelos proprietários. Abaixo, temos um diagrama de como esse cenário poderia ser implementado:
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=\linewidth]{cap04-aplicacoes-e-usos/assets/fine-tuning-image-2.pdf}
   \caption{Arquitetura típica para fine-tuning de modelos de linguagem com dados obtidos por Web Scraping.}
