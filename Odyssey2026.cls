@@ -348,7 +348,7 @@
 \if@preprint\ps@preprint
 \else\ps@empty\flushbottom\fi
 
-\def\thebibliography#1{\section{References}\eightpt\list
+\def\thebibliography#1{\section{Referências}\eightpt\list
  {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
  \advance\leftmargin\labelsep
  \usecounter{enumi}}
