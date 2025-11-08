@@ -329,9 +329,10 @@
      \@xsect{\@tempskipa}}
 
 \def\abstract{\begin{center}
-{\bf \large Abstract\vspace{-.5em}\vspace{2pt}}
+{\bf \large \abstractname \vspace{-.5em}\vspace{2pt}}
 \end{center}}
 \def\endabstract{\par
+\vspace{.5em}
 \noindent{\bf Index Terms}: \@keywords}
 
 \def\copyrightnotice#1{\gdef\@copyrightnotice{#1}}\let\@copyrightnotice\relax
