@@ -333,7 +333,7 @@
 \end{center}}
 \def\endabstract{\par
 \vspace{.5em}
-\noindent{\bf Index Terms}: \@keywords}
+\noindent{\bf Palavras-chave}: \@keywords}
 
 \def\copyrightnotice#1{\gdef\@copyrightnotice{#1}}\let\@copyrightnotice\relax
 \def\toappear#1{\gdef\@toappear{#1}}\let\@toappear\relax
